@@ -1,0 +1,109 @@
+{
+  "owner": "RONITERVO",
+  "generatedAt": "2026-09-23T14:14:25.717Z",
+  "sites": [
+    {
+      "id": "RONITERVO/Automatic-Chessboard",
+      "repository": "RONITERVO/Automatic-Chessboard",
+      "name": "Automatic Chessboard",
+      "description": "Experience the real Automatic Chessboard in a one-to-one, rewindable Arduino and WebXR simulation",
+      "url": "https://ronitervo.github.io/Automatic-Chessboard/",
+      "sourceUrl": "https://github.com/RONITERVO/Automatic-Chessboard",
+      "updatedAt": "2026-09-15T11:13:55Z",
+      "availability": "available",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-23T14:14:25.578Z",
+      "pageTitle": "Automatic Chessboard · Immersive Simulator"
+    },
+    {
+      "id": "RONITERVO/CubeHelperXR",
+      "repository": "RONITERVO/CubeHelperXR",
+      "name": "Cube Helper XR",
+      "description": "Oma Rubikin kuutio huoneessasi. Quest 3 mixed reality, käsiseuranta ja vain itse paljastamasi vihjeet.",
+      "url": "https://ronitervo.github.io/CubeHelperXR/",
+      "sourceUrl": "https://github.com/RONITERVO/CubeHelperXR",
+      "updatedAt": "2026-09-15T10:36:10Z",
+      "availability": "available",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-23T14:14:25.584Z",
+      "pageTitle": "Kuutio — huoneessasi"
+    },
+    {
+      "id": "RONITERVO/Idea-To-SVG",
+      "repository": "RONITERVO/Idea-To-SVG",
+      "name": "Idea To SVG",
+      "description": "Type anything and turn it into amazing svg for your app.",
+      "url": "https://ronitervo.github.io/Idea-To-SVG/",
+      "sourceUrl": "https://github.com/RONITERVO/Idea-To-SVG",
+      "updatedAt": "2026-02-24T05:57:56Z",
+      "availability": "available",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-23T14:14:25.580Z",
+      "pageTitle": "Sketch AI - Infinite Refiner"
+    },
+    {
+      "id": "RONITERVO/Ink-Battle",
+      "repository": "RONITERVO/Ink-Battle",
+      "name": "Ink Battle",
+      "description": "Play classic 2D war game on a scetchbook with local AI.",
+      "url": "https://ronitervo.github.io/Ink-Battle/",
+      "sourceUrl": "https://github.com/RONITERVO/Ink-Battle",
+      "updatedAt": "2026-09-23T14:14:01Z",
+      "availability": "available",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-23T14:14:25.580Z",
+      "pageTitle": "Ink Battle"
+    },
+    {
+      "id": "RONITERVO/MaestroTutor",
+      "repository": "RONITERVO/MaestroTutor",
+      "name": "Maestro Tutor",
+      "description": "AI language tutor, tailored to you, multimodal both ways, full context awarenes. Chat using video, images, audio, text and other. Get tailored text, visual, audio reply. Discuss things you like and learn languages without effort. Get fiendly push when silent.",
+      "url": "https://chatwithmaestro.com/",
+      "sourceUrl": "https://github.com/RONITERVO/MaestroTutor",
+      "updatedAt": "2026-09-23T13:36:20Z",
+      "availability": "available",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-23T14:14:25.716Z",
+      "pageTitle": "Gemini Language Tutor"
+    },
+    {
+      "id": "RONITERVO/Magnet-simulation",
+      "repository": "RONITERVO/Magnet-simulation",
+      "name": "Magnet simulation",
+      "description": "Finite-size magnet force studies, tolerance analysis, supplier sample comparison and delivery inspection in a browser-based engineering workspace.",
+      "url": "https://ronitervo.github.io/Magnet-simulation/",
+      "sourceUrl": "https://github.com/RONITERVO/Magnet-simulation",
+      "updatedAt": "2026-09-09T18:04:43Z",
+      "availability": "available",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-23T14:14:25.592Z",
+      "pageTitle": "Magnet Workbench — Design, verify and receive"
+    },
+    {
+      "id": "RONITERVO/Spanish-Quick-Apps",
+      "repository": "RONITERVO/Spanish-Quick-Apps",
+      "name": "Spanish Quick Apps",
+      "description": "25 experiencias táctiles para explorar conceptos en español.",
+      "url": "https://ronitervo.github.io/Spanish-Quick-Apps/",
+      "sourceUrl": "https://github.com/RONITERVO/Spanish-Quick-Apps",
+      "updatedAt": "2026-07-30T06:47:54Z",
+      "availability": "available",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-23T14:14:25.593Z",
+      "pageTitle": "Espectros en Español"
+    },
+    {
+      "id": "RONITERVO/Spanish-Quick-Apps-audio",
+      "repository": "RONITERVO/Spanish-Quick-Apps-audio",
+      "name": "Spanish Quick Apps audio",
+      "description": "Full-quality generated narration assets for Spanish Quick Apps",
+      "url": "https://ronitervo.github.io/Spanish-Quick-Apps-audio/",
+      "sourceUrl": "https://github.com/RONITERVO/Spanish-Quick-Apps-audio",
+      "updatedAt": "2026-07-29T22:02:07Z",
+      "availability": "unavailable",
+      "httpStatus": 404,
+      "checkedAt": "2026-09-23T14:14:25.595Z"
+    }
+  ]
+}

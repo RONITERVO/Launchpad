@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131514">
+  <meta name="description" content="Roni’s GitHub Pages apps, games and experiments. Find something and open it in one click.">
+  <title>Launchpad — Roni’s apps</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to apps</a>
+  <div class="shell">
+    <header class="masthead">
+      <a href="./" class="brand" aria-label="Launchpad home"><img src="./favicon.svg" alt="" width="34" height="34">Launchpad<span class="brand-label">PERSONAL APP LIBRARY</span></a>
+      <a class="profile" id="profile" href="https://github.com/RONITERVO" target="_blank" rel="noopener noreferrer"><span class="avatar">R</span><span>RONITERVO</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </header>
+    <main id="main">
+      <section class="intro" aria-labelledby="title">
+        <div><p class="eyebrow"><span></span>RONITERVO / GITHUB PAGES</p><h1 id="title">Your apps. <span>One click away.</span></h1><p class="intro-copy">All your apps, games and experiments in one place.</p></div>
+        <div class="sync"><button id="refresh" class="refresh" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M6.1 6.1a8.3 8.3 0 0 1 13.5 4M17.9 17.9a8.3 8.3 0 0 1-13.5-4"/></svg><span>Refresh apps</span></button><span id="sync-time">Finding your apps…</span></div>
+      </section>
+      <div class="toolbar">
+        <div class="filters"><span class="collection-tab">All apps <span id="all-count">0</span></span></div>
+        <div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input type="search" id="search" aria-label="Search apps" placeholder="Find an app…" autocomplete="off"><kbd>/</kbd></div>
+      </div>
+      <p id="notice" class="notice" role="status" hidden></p>
+      <div class="section-label"><h2 id="results-label">Your collection</h2><span id="results-count" aria-live="polite"></span></div>
+      <div id="catalog" class="catalog" aria-busy="true"><p class="loading">Loading your collection…</p></div>
+      <div id="empty" class="empty" hidden><span class="empty-mark">⌕</span><h2>No apps found</h2><p id="empty-message">Try another name or clear your search.</p><button id="clear-search" type="button" class="refresh">Clear search</button></div>
+      <section class="resources" id="resources" hidden aria-labelledby="resources-title"><div><h2 id="resources-title">Also hosted</h2><p>Pages sites without an available launch page.</p></div><div id="resource-list"></div></section>
+    </main>
+    <footer><span class="footer-brand"><span class="tiny-grid">▦</span> Personal app library</span><span>Auto-discovered from GitHub Pages <span class="separator">/</span> <a id="source" href="https://github.com/RONITERVO/Launchpad" target="_blank" rel="noopener noreferrer">View source ↗</a></span></footer>
+  </div>
+  <noscript><p class="notice">Enable JavaScript to load the app catalog. You can also browse <a href="https://github.com/RONITERVO?tab=repositories">Roni’s repositories</a>.</p></noscript>
+</body>
+</html>
