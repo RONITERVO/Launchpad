@@ -2,7 +2,7 @@ import {appEntries,listRepositories,reconcile,safeURL} from './core.js';
 import {categories,gridLayout,visibleApps} from './profiles.js';
 const $=selector=>document.querySelector(selector);
 const make=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text)node.textContent=text;return node;};
-let config,snapshot,sites=[],category='all',page=0,busy=false,layout,layoutKey='';
+let config,snapshot,sites=[],category='all',page=0,busy=false,ready=false,layout,layoutKey='';
 const cacheKey=owner=>`launchpad:v2:${owner}`;
 
 function notice(message='') { $('#notice').textContent=message;$('#notice').hidden=!message; }
@@ -17,6 +17,7 @@ function appTile(entry) {
   link.append(artwork,make('span','app-label',entry.label.replace(/([a-z])([A-Z])/g,'$1\u200b$2')));return link;
 }
 function render() {
+  if(!ready)return;
   const entries=appEntries(sites).filter(entry=>safeURL(entry.url));
   const matches=visibleApps(entries,category,$('#search').value);
   const capacity=layout?.capacity||8;const pages=Math.max(1,Math.ceil(matches.length/capacity));
@@ -78,7 +79,7 @@ async function init() {
     try{const response=await fetch('./catalog.json',{cache:'no-cache'});if(response.ok)snapshot=await response.json();}catch{}
     let cached;try{cached=JSON.parse(localStorage.getItem(cacheKey(config.owner)));}catch{}
     sites=snapshot?.sites||[];const useCache=Array.isArray(cached?.sites)&&new Date(cached.checkedAt)>new Date(snapshot?.generatedAt||0);if(useCache)sites=cached.sites;
-    fit();render();updateTime(useCache?cached.checkedAt:snapshot?.generatedAt);await refresh();
+    ready=true;fit();render();updateTime(useCache?cached.checkedAt:snapshot?.generatedAt);await refresh();
   }catch{$('#catalog').replaceChildren();$('#catalog').setAttribute('aria-busy','false');notice('Couldn’t load the catalog. Please reload.');}
 }
 init();
