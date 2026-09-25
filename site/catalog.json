@@ -1,6 +1,6 @@
 {
   "owner": "RONITERVO",
-  "generatedAt": "2026-09-23T14:14:25.717Z",
+  "generatedAt": "2026-09-25T11:34:38.376Z",
   "sites": [
     {
       "id": "RONITERVO/Automatic-Chessboard",
@@ -12,8 +12,15 @@
       "updatedAt": "2026-09-15T11:13:55Z",
       "availability": "available",
       "httpStatus": 200,
-      "checkedAt": "2026-09-23T14:14:25.578Z",
-      "pageTitle": "Automatic Chessboard · Immersive Simulator"
+      "checkedAt": "2026-09-25T11:34:37.533Z",
+      "pageTitle": "Automatic Chessboard · Immersive Simulator",
+      "readme": {
+        "url": "https://github.com/RONITERVO/Automatic-Chessboard/blob/main/README.md",
+        "sha": "3d89361e773e50761456a563a640d27332fadff0",
+        "summary": "Automatic Chessboard Arduino firmware for a CoreXY automatic chessboard with: - two STEP/DIR stepper-motor drivers; - an electromagnet for moving pieces; - a multiplexed 8x8 reed-sensor matrix; - a 16x2 I2C LCD and two-button interface; and - the Micro-Max chess engine. This is a substantially modified implementation of Greg06's Automated Chessboard, adapted around salvaged 3D-printer mechanics and the tested electronics documented in this repository. See design lineage and attribution and the repository's multi-license map before redistributing it. The immersive 3D simulator presents the complete assembly, chess pieces, setup process, physical controls, LCD, Arduino signal flow, wiring, and full-history replay in one shared React Three Fiber world. Visitors can use mouse, touch, or supported WebXR hands/controllers at real-world scale while the compiled production Nano HEX drives power-on, calibration, reed sensing, Micro-Max decisions, STEP/DIR motion, and magnet control. The standalone experience exposes Bluetooth as disconnected and never requests a real device. It is published automatically from site/ after changes reach main . Demo https://github.com/user-attachments/assets/5234de29-f910-4aed-a476-050bdca1a51d Hardware assumptions The sketch uses the pin assignments and motion calibration in global.h . The motor interface expects STEP/DIR drivers such as the A4988; motor current and microstep selection are configured on the driver hardware. For a complete beginner-oriented build, start with the hardware build guide. It includes protected power wiring, a BOM, exact Nano/MKS Gen L V1.0 and 64-square sensor maps, staged assembly, commissioning checks, diagrams, photographs of the working prototype, and rework notes for the operational long PCB whose design predates t",
+        "checkedAt": "2026-09-25T11:34:37.374Z"
+      },
+      "category": "lab"
     },
     {
       "id": "RONITERVO/CubeHelperXR",
@@ -25,8 +32,15 @@
       "updatedAt": "2026-09-15T10:36:10Z",
       "availability": "available",
       "httpStatus": 200,
-      "checkedAt": "2026-09-23T14:14:25.584Z",
-      "pageTitle": "Kuutio — huoneessasi"
+      "checkedAt": "2026-09-25T11:34:37.511Z",
+      "pageTitle": "Kuutio — huoneessasi",
+      "readme": {
+        "url": "https://github.com/RONITERVO/CubeHelperXR/blob/main/README.md",
+        "sha": "665d9442256f2103db29b02d2e11cb47fd541d7a",
+        "summary": "Kuutio — huoneessasi Quest 3:lle suunnattu, GitHub Pagesissa julkaistava Rubikin kuution mixed reality -sovellus. Sama paketti sisältää myös alkuperäisen puhelinversion. Avaa sivu Questin omassa selaimessa → Avaa huoneessa → salli pyydetyt oikeudet. Tämä ei ole huoneeseen ripustettu selainikkuna. WebXR-istunto piirtää kolmiulotteisen kuution kummallekin silmälle läpinäkyvää taustaa vasten. Huone näkyy Questin läpinäön kautta. Kädet tarttuvat virtuaalisen kuution ruutuihin. Testauksen raja: ratkaisija, geometria, ohjaustilakone, WebGL-renderöinti ja simuloitu WebXR-integraatio on testattu. Fyysisen Quest 3:n käsituntuma, suorituskyky, läpinäkö ja oikeusdialogit on vielä hyväksymistestattava. Katso testiraportti ja laitetestilista. Julkaise GitHub Pagesissa 1. Luo GitHubiin esimerkiksi julkinen repositorio kuutio-mr . 2. Pura ZIP. Lisää sen sisällä olevat tiedostot ja kansiot repositorion juureen . index.html , src , engine , phone , assets ja .nojekyll kuuluvat samalle tasolle. Älä lataa pelkkää ZIP-tiedostoa äläkä jätä sovellusta ylimääräiseen alikansioon. 3. Valitse repositoriossa Settings → Pages → Build and deployment → Source: Deploy from a branch . 4. Valitse main ja /(root) , sitten Save . Avaa Pages-asetusten ilmoittama sivuston osoite julkaisun valmistuttua. 5. Avaa HTTPS-osoite Questin selaimessa. Paina Avaa huoneessa . Ei rakennuskomentoa, npm install -vaihetta, palvelinta, API-avainta, CDN:ää tai sideloadattavaa APK:ta. Sivusto käyttää suhteellisia polkuja, joten myös projektisivun /<repositorion-nimi / -osoite toimii. .nojekyll on mukana. GitHubin käyttöliittymän kautta tiedostot voi lisätä kohdasta Add file → Upload files . Tarkista piilotettujen tiedostojen näyttö, jotta .nojekyll tulee mukaan. docs , tests ja tools voivat olla mukana; niitä ei tarvita sov",
+        "checkedAt": "2026-09-25T11:34:37.311Z"
+      },
+      "category": "play"
     },
     {
       "id": "RONITERVO/Idea-To-SVG",
@@ -38,21 +52,35 @@
       "updatedAt": "2026-02-24T05:57:56Z",
       "availability": "available",
       "httpStatus": 200,
-      "checkedAt": "2026-09-23T14:14:25.580Z",
-      "pageTitle": "Sketch AI - Infinite Refiner"
+      "checkedAt": "2026-09-25T11:34:37.497Z",
+      "pageTitle": "Sketch AI - Infinite Refiner",
+      "readme": {
+        "url": "https://github.com/RONITERVO/Idea-To-SVG/blob/main/README.md",
+        "sha": "1eeb67f51c3117ba6a2a510b6e52b832374f75a4",
+        "summary": "<div align=\"center\" 🎨 Sketch AI: Idea-To-SVG Infinite Refinement Loop for SVG Graphics An AI-powered creative tool that transforms ambiguous ideas into refined SVG graphics through continuous generation, critique, and improvement cycles. View Demo • Report Bug • Request Feature </div --- ✨ What Makes This Special? Sketch AI isn't just another AI image generator—it's a creative partner that never settles. Using Google's powerful Gemini 3 Pro model, it creates a continuous feedback loop where SVG graphics are: 1. 🧠 Planned - Analyzes your ambiguous prompt and creates a detailed artistic plan 2. 🎨 Generated - Creates an initial SVG graphic based on the plan 3. 📸 Rendered - Captures the visual output for evaluation 4. 🔍 Critiqued - Harshly but constructively evaluates the result against your original idea 5. ✏️ Refined - Rewrites the SVG code to address all critique points 6. 🔄 Repeated - Continues this cycle indefinitely, with each iteration improving upon the last All iterations are automatically saved to a beautiful sketchpad-inspired gallery, complete with thumbnails and AI critiques, so you can watch your idea evolve in real-time. --- 🎯 Key Features 🤖 AI-Powered Infinite Loop - Gemini 3 Pro Reasoning : Uses extended thinking budgets (up to 4096 tokens) for deep SVG code refinement - Vision Analysis : Evaluates rendered graphics using Gemini's vision capabilities - Continuous Improvement : Never stops refining until you're satisfied - Smart Error Recovery : Automatically retries on failures with exponential backoff 🖼️ Gallery & History - Automatic Thumbnails : Every iteration captured as a base64 image - Persistent Storage : Uses IndexedDB for browser-based history - Rich Metadata : Tracks prompts, critiques, timestamps, and iteration numbers - Batch Operations",
+        "checkedAt": "2026-09-25T11:34:37.353Z"
+      },
+      "category": "create"
     },
     {
       "id": "RONITERVO/Ink-Battle",
       "repository": "RONITERVO/Ink-Battle",
       "name": "Ink Battle",
-      "description": "Play classic 2D war game on a scetchbook with local AI.",
-      "url": "https://ronitervo.github.io/Ink-Battle/",
+      "description": "A living pencil-and-watercolor battle on a 3D sketchbook. Play with touch, mouse, or Quest mixed reality.",
+      "url": "https://drawbattles.com/",
       "sourceUrl": "https://github.com/RONITERVO/Ink-Battle",
-      "updatedAt": "2026-09-23T14:14:01Z",
+      "updatedAt": "2026-09-25T11:27:52Z",
       "availability": "available",
       "httpStatus": 200,
-      "checkedAt": "2026-09-23T14:14:25.580Z",
-      "pageTitle": "Ink Battle"
+      "checkedAt": "2026-09-25T11:34:37.498Z",
+      "pageTitle": "Ink Battle · Draw Battles",
+      "readme": {
+        "url": "https://github.com/RONITERVO/Ink-Battle/blob/main/README.md",
+        "sha": "062abf0ee6077ffc8f4c1ad06cb82935103bc827",
+        "summary": "Ink Battle A living pencil-and-watercolor battle on a 3D sketchbook, from stone clubs to cosmic weapons. The same physical troops, cannons and potions work with a mouse, a phone's touchscreen, and Quest 3 hands or controllers. Play · Controls · Tabletop tactics · SDK · Hosting Castle Age gameplay in the desktop browser. Play and develop Open http://127.0.0.1:4173 or open index.html directly. Drag a difficulty seal onto the page to start. Drop troops across the rally strip, guide deployed troops, build cannon docks, place cannons, and toss upgrade potions. The hourglass pauses and the clock cycles 1×/2×/3×. Music retains its normal playback rate. Use one finger or the left mouse button to move pieces. Start a drag outside the book and its pieces to rotate the view. With two fingers, pinch to zoom, drag to pan and twist to turn gently, all in the same gesture. On PC, scroll to zoom, middle-drag to pan and right-drag to orbit. No additional game buttons are needed. On Quest Browser, enter mixed reality; pinch or grip pieces, carry one drawn ring, or use two rings to scale/turn. The MR book starts about 52 × 44 cm, with a fallback table height of 75 cm. Detected surfaces set its actual placement height; the rings still let you move and resize it freely. The default game uses a deterministic opponent and works without a model or an account. The PWA caches the shell and fonts; music streams separately. Classic 2D and optional Gemma remain playable at classic.html , linked as an archive from help. Existing classic saves, settings and replays keep their rules. See archived Gemma setup for the separate local-model benchmark. The engine is shared Inspired by StateBeats and StateWork, combat is independent of display, clock and input. The browser, terminal, replay verifier and acc",
+        "checkedAt": "2026-09-25T11:34:37.309Z"
+      },
+      "category": "play"
     },
     {
       "id": "RONITERVO/MaestroTutor",
@@ -61,11 +89,18 @@
       "description": "AI language tutor, tailored to you, multimodal both ways, full context awarenes. Chat using video, images, audio, text and other. Get tailored text, visual, audio reply. Discuss things you like and learn languages without effort. Get fiendly push when silent.",
       "url": "https://chatwithmaestro.com/",
       "sourceUrl": "https://github.com/RONITERVO/MaestroTutor",
-      "updatedAt": "2026-09-23T13:36:20Z",
+      "updatedAt": "2026-09-24T01:09:04Z",
       "availability": "available",
       "httpStatus": 200,
-      "checkedAt": "2026-09-23T14:14:25.716Z",
-      "pageTitle": "Gemini Language Tutor"
+      "checkedAt": "2026-09-25T11:34:37.992Z",
+      "pageTitle": "Gemini Language Tutor",
+      "readme": {
+        "url": "https://github.com/RONITERVO/MaestroTutor/blob/main/README.md",
+        "sha": "f30d5bf78dcc596fabbb06bbc0ceaba97cdb0a69",
+        "summary": "<div align=\"center\" ✈️ Maestro Language Tutor The AI tutor that hears you, sees your world, and thinks in two languages at once. </div --- A session in 30 seconds You open Maestro. A 3D globe rotates slowly in front of you — the entire world, lit by your local time of day. Country flags drift across its surface, distributed from pole to pole. You spin it with your finger, let it coast. You find 🇯🇵 on the right wheel. Japanese. The left wheel stays on 🇬🇧 English. A dashed arc draws itself between the two flags, and a tiny ✈️ plane begins to trace the route. You tap the plane. The globe dissolves. A notebook opens. Your tutor is ready. You type a sentence in English. Maestro replies in Japanese — then below it, in English — each phrase highlighted in soft yellow, each translation in light blue. You tap a line. It speaks . You hold the mic and reply. Maestro listens. You stumble. You look at the Suggestions — three Japanese phrases appear, each one exactly right for this moment. You tap one and it expands: the English meaning slides open. It speaks out loud. You speak, and the conversation moves on. You flip on the camera. You hold up your coffee cup. You don't know the word. You draw a circle on the photo. Maestro names it, explains it, uses it in a sentence, and generates a visual or auditory aid—such as a game, an image, or even music of a coffee shop to anchor the memory. You tap the red button. Now you're in a live duplex call — no turns, no long waiting — you speak, Maestro speaks, you interrupt, it pauses. Natural. You hold your phone up. It sees your room and weaves it into the lesson. You see how the conversation builds on paper — with text, audio, and extra elements to aid teaching with images, minigames, charts, music in the same chat message you see on the ",
+        "checkedAt": "2026-09-25T11:34:37.763Z"
+      },
+      "category": "learn"
     },
     {
       "id": "RONITERVO/Magnet-simulation",
@@ -77,8 +112,15 @@
       "updatedAt": "2026-09-09T18:04:43Z",
       "availability": "available",
       "httpStatus": 200,
-      "checkedAt": "2026-09-23T14:14:25.592Z",
-      "pageTitle": "Magnet Workbench — Design, verify and receive"
+      "checkedAt": "2026-09-25T11:34:37.930Z",
+      "pageTitle": "Magnet Workbench — Design, verify and receive",
+      "readme": {
+        "url": "https://github.com/RONITERVO/Magnet-simulation/blob/main/README.md",
+        "sha": "faa148eed91d73b82d7692d4aed95f25edc8735d",
+        "summary": "Magnet Workbench A browser-based engineering workspace for turning a magnet concept into a measurable pre-order specification and checking incoming samples against it. Open Magnet Workbench Practical workflow 1. Choose a closure, friction hold, guided repulsion, or measured-fixture example. 2. Enter finished magnet dimensions, coating thickness per face, actual remanence (Br), supplier part numbers, gap, alignment and temperature. A grade name only supplies a starting Br value. 3. Enter the supported load and design factor. Review force versus gap, the tolerance envelope, forces, torque and numerical refinement. Click a curve point or use the gap slider to explore clearance. 4. Measure reference samples in the real fixture at gaps spanning the entire operating tolerance. Import gap mm,force N CSV, record supplier and test conditions, and confirm your measurements. 5. Record incoming target-part samples with force, dimensions, polarity and sample IDs. The app compares them with the reference curve and dimensional tolerances. Missing evidence stays visible. 6. Save the complete study JSON and export the printable engineering report with the exact specifications, evidence and delivery results. Studies autosave on the current browser/device. Open/Save JSON transfers them between devices. Starting an example or new study downloads the previous study as a recoverable backup. There is no server, sign-in or measurement upload. Fonts may load from Google Fonts; fallback system fonts work offline. What is calculated - Finite magnet model: Two uniformly axially magnetized cylinders/discs, rectangular blocks or rings, with parallel faces, in free space. Arbitrary X/Y offset; axial attraction or repulsion. Analytical finite-size fields adapted from Magpylib 5.2.1; force and torque f",
+        "checkedAt": "2026-09-25T11:34:37.765Z"
+      },
+      "category": "lab"
     },
     {
       "id": "RONITERVO/Spanish-Quick-Apps",
@@ -87,11 +129,18 @@
       "description": "25 experiencias táctiles para explorar conceptos en español.",
       "url": "https://ronitervo.github.io/Spanish-Quick-Apps/",
       "sourceUrl": "https://github.com/RONITERVO/Spanish-Quick-Apps",
-      "updatedAt": "2026-07-30T06:47:54Z",
+      "updatedAt": "2026-09-23T18:35:46Z",
       "availability": "available",
       "httpStatus": 200,
-      "checkedAt": "2026-09-23T14:14:25.593Z",
-      "pageTitle": "Espectros en Español"
+      "checkedAt": "2026-09-25T11:34:37.907Z",
+      "pageTitle": "Espectros en Español",
+      "readme": {
+        "url": "https://github.com/RONITERVO/Spanish-Quick-Apps/blob/main/README.md",
+        "sha": "4d66ddaf23a94728ebc13eb19923b0055f2ed894",
+        "summary": "Spanish Quick Apps Open the app: 25 full-screen touch experiences for exploring concepts in Spanish, from colors and music to the cosmos. Swipe vertically between experiences, use Page Up/Page Down, or open any of the original numbered URLs directly. Hold one place to hear each Spanish line followed immediately by its translation, before the next Spanish line. The translation writes over that same Spanish line, keeping the Spanish faintly visible underneath. Translation follows the browser language: English is the fallback; Finnish is also supported. Recorded SyncVoice audio and synchronized cues are preferred, with browser speech as a fallback. Spanish recordings are included here; English and Finnish recordings remain on the companion audio site's existing origin. Use the speaker/speed selector at the top left to set narration from 1× to 3× in 0.25× steps. Recorded speech changes speed immediately, preserves pitch, and keeps captions synchronized. The setting is remembered across experiences and visits. Browser speech fallback uses the selected speed from its next spoken segment. When exploring nearby items in the same region, fully heard headings and shared context stay visible without being spoken again. Both the Spanish and translation must finish before a shared line can be skipped. Item names, explanations, and changed context still play. Moving to another region or experience, leaving the tab, or reloading clears this temporary memory. Development Requires Node 24 or newer. Open the printed localhost URL. Source changes rebuild automatically; refresh the browser to see them. For a production preview, run npm run build and npm run preview . The app is authored as modules, content files, and styles under src/ . A small static build generates dist/ , including all ",
+        "checkedAt": "2026-09-25T11:34:37.758Z"
+      },
+      "category": "learn"
     },
     {
       "id": "RONITERVO/Spanish-Quick-Apps-audio",
@@ -103,7 +152,34 @@
       "updatedAt": "2026-07-29T22:02:07Z",
       "availability": "unavailable",
       "httpStatus": 404,
-      "checkedAt": "2026-09-23T14:14:25.595Z"
+      "checkedAt": "2026-09-25T11:34:37.767Z",
+      "readme": {
+        "url": "https://github.com/RONITERVO/Spanish-Quick-Apps-audio/blob/main/README.md",
+        "sha": "d464d87ff19cc3fbec6f29b45be2c673391a3b74",
+        "summary": "Spanish Quick Apps audio Full-quality generated English and Finnish narration assets for Spanish Quick Apps. This companion repository keeps the educational application's GitHub Pages deployment below the platform's published-site size limit. Files under assets/syncvoice/ are deterministic outputs of SyncVoice; application source and the canonical narration manifest remain in the main repository. Published library - 6,415 English MP3/transcript pairs - 6,415 Finnish MP3/transcript pairs - 24 kHz, 96 kbps MP3 output, unchanged from the SyncVoice generation profile - runtime manifest at assets/syncvoice/manifest.json GitHub Pages publishes this repository at https://ronitervo.github.io/Spanish-Quick-Apps-audio/ . The application and this asset site share the same ronitervo.github.io origin, while separate repositories keep each published site below GitHub Pages' size limit. Git LFS is intentionally not used because GitHub Pages does not publish LFS objects. Merge and publish this repository before the dependent Spanish Quick Apps narration PR. Future regeneration is resumable; SyncVoice validates both the MP3 and transcript in this output root before skipping an entry. Transcript sidecars preserve Gemini-observed timing by default. Teams that prefer deterministic full-duration highlighting can opt in with SyncVoice's Normalize transcript timing setting or its --normalize-cues / normalize-cues.mjs tools; audio is unchanged either way.",
+        "checkedAt": "2026-09-25T11:34:37.759Z"
+      },
+      "category": "learn"
+    },
+    {
+      "id": "RONITERVO/StateBeats",
+      "repository": "RONITERVO/StateBeats",
+      "name": "State Beats",
+      "description": "An open spatial rhythm engine. Play in standalone VR, build sequences, or drive the same simulation headlessly.",
+      "url": "https://ronitervo.github.io/StateBeats/",
+      "sourceUrl": "https://github.com/RONITERVO/StateBeats",
+      "updatedAt": "2026-09-24T23:21:56Z",
+      "availability": "available",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-25T11:34:38.375Z",
+      "pageTitle": "StateBeats — your rhythm, your world",
+      "readme": {
+        "url": "https://github.com/RONITERVO/StateBeats/blob/main/README.md",
+        "sha": "e43888a3abf682c64c79eb798a2e208724c975b1",
+        "summary": "StateBeats A spatial rhythm engine that plays the same way in a headset, a terminal, or an agent's tool loop. The backend is the product: a dependency-free mathematical kernel with explicit integer time, shared TypeScript SDK, versioned maps and compiled sequences, deterministic replay, a native programmatic builder, CLI and MCP. The reference player adds standalone WebXR, desktop controls, spatial sound, local music import and original music through adapters. Moving emitters, scene paths and shared music signals let communities build different worlds on the same rules. No commercial or full game engine is used. 0.3.0 development release candidate. Headless and desktop checks are recorded in acceptance evidence. Standalone Quest 3 support is implemented; real-headset controls, comfort, audio usability and performance remain to be tested. Play locally Use Node 24 LTS and npm. From the repository directory: Open http://127.0.0.1:4173 . Choose First orbit to learn the controls, Chasing the sun for a moving-sun landscape, or A sky full of stars for its space variation. Select Play on desktop or Watch a bot . The original sun journey contains 66 star/hold interactions and five passing bird hazards across a full turn. Featured: Event Horizon — Master. A complete original 2:40, 150 BPM electronic track ships with the game and loads automatically. Its 620 scoring targets include wide linked chords, 52 moving holds, musical sweeps and answering turns, stationary constellations, and seven duck/lean passages. No files need importing. Use ?map=event-horizon-master to link to this selection. First orbit remains the default. Collaboration: Ink-Battle — Between the Lines. Stand between two armies inside Ink-Battle's original painted book. Six age chapters, a bundled 3:20 score and 358",
+        "checkedAt": "2026-09-25T11:34:38.221Z"
+      },
+      "category": "play"
     }
   ]
 }

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#131514">
-  <meta name="description" content="Roni’s GitHub Pages apps, games and experiments. Find something and open it in one click.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10131e">
+  <meta name="description" content="Roni’s apps. Pick an image and jump in.">
   <title>Launchpad — Roni’s apps</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
@@ -14,26 +14,25 @@
   <a class="skip-link" href="#main">Skip to apps</a>
   <div class="shell">
     <header class="masthead">
-      <a href="./" class="brand" aria-label="Launchpad home"><img src="./favicon.svg" alt="" width="34" height="34">Launchpad<span class="brand-label">PERSONAL APP LIBRARY</span></a>
-      <a class="profile" id="profile" href="https://github.com/RONITERVO" target="_blank" rel="noopener noreferrer"><span class="avatar">R</span><span>RONITERVO</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
-    </header>
-    <main id="main">
-      <section class="intro" aria-labelledby="title">
-        <div><p class="eyebrow"><span></span>RONITERVO / GITHUB PAGES</p><h1 id="title">Your apps. <span>One click away.</span></h1><p class="intro-copy">All your apps, games and experiments in one place.</p></div>
-        <div class="sync"><button id="refresh" class="refresh" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M6.1 6.1a8.3 8.3 0 0 1 13.5 4M17.9 17.9a8.3 8.3 0 0 1-13.5-4"/></svg><span>Refresh apps</span></button><span id="sync-time">Finding your apps…</span></div>
-      </section>
-      <div class="toolbar">
-        <div class="filters"><span class="collection-tab">All apps <span id="all-count">0</span></span></div>
-        <div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input type="search" id="search" aria-label="Search apps" placeholder="Find an app…" autocomplete="off"><kbd>/</kbd></div>
+      <a href="./" class="brand" aria-label="Launchpad home"><img src="./favicon.svg" alt="" width="26" height="26"><h1>Launchpad</h1></a>
+      <div id="search-box" class="search-box" hidden><input id="search" type="search" aria-label="Search apps" placeholder="Search apps" autocomplete="off"><button id="close-search" class="icon-button" type="button" aria-label="Close search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+      <div class="header-actions">
+        <button id="search-toggle" class="icon-button" type="button" aria-label="Search apps" aria-expanded="false" aria-controls="search-box" title="Search apps (/)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg></button>
+        <button id="refresh" class="icon-button" type="button" aria-label="Refresh apps" title="Refresh apps"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M6.1 6.1a8.3 8.3 0 0 1 13.5 4M17.9 17.9a8.3 8.3 0 0 1-13.5-4"/></svg></button>
       </div>
+    </header>
+    <main id="main" class="workspace">
+      <nav id="categories" class="categories" aria-label="App categories"></nav>
       <p id="notice" class="notice" role="status" hidden></p>
-      <div class="section-label"><h2 id="results-label">Your collection</h2><span id="results-count" aria-live="polite"></span></div>
-      <div id="catalog" class="catalog" aria-busy="true"><p class="loading">Loading your collection…</p></div>
-      <div id="empty" class="empty" hidden><span class="empty-mark">⌕</span><h2>No apps found</h2><p id="empty-message">Try another name or clear your search.</p><button id="clear-search" type="button" class="refresh">Clear search</button></div>
-      <section class="resources" id="resources" hidden aria-labelledby="resources-title"><div><h2 id="resources-title">Also hosted</h2><p>Pages sites without an available launch page.</p></div><div id="resource-list"></div></section>
+      <div class="stage" id="stage">
+        <div id="catalog" class="catalog" aria-label="Apps" aria-busy="true"><p class="loading">Loading…</p></div>
+        <div id="empty" class="empty" hidden><p id="empty-message">No matches</p><button id="clear-search" type="button">Show all</button></div>
+      </div>
+      <div id="pagination" class="pagination" hidden aria-label="App pages"><button id="previous-page" class="icon-button" type="button" aria-label="Previous page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button><span id="page-number" aria-live="polite"></span><button id="next-page" class="icon-button" type="button" aria-label="Next page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button></div>
     </main>
-    <footer><span class="footer-brand"><span class="tiny-grid">▦</span> Personal app library</span><span>Auto-discovered from GitHub Pages <span class="separator">/</span> <a id="source" href="https://github.com/RONITERVO/Launchpad" target="_blank" rel="noopener noreferrer">View source ↗</a></span></footer>
+    <footer><span id="app-count" role="status">Finding apps…</span><div class="footer-actions"><button class="icon-button" id="catalog-info" type="button" aria-label="Catalog details and hosted files" title="Catalog details"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 11v5M12 7.5v.1"/></svg></button><a id="source" class="icon-button" href="https://github.com/RONITERVO/Launchpad" target="_blank" rel="noopener noreferrer" aria-label="GitHub source (new tab)" title="GitHub source"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6M16 6l6 6-6 6m-3-14-2 16"/></svg></a></div></footer>
   </div>
-  <noscript><p class="notice">Enable JavaScript to load the app catalog. You can also browse <a href="https://github.com/RONITERVO?tab=repositories">Roni’s repositories</a>.</p></noscript>
+  <dialog id="info-dialog" aria-labelledby="info-title"><div class="dialog-heading"><h2 id="info-title">Your catalog</h2><button class="icon-button" id="close-info" aria-label="Close details" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div><p id="sync-time">Checking GitHub…</p><p>New public Pages sites appear automatically. Artwork and categories are based on each app’s README.</p><section id="resources" hidden><h3>Also hosted</h3><div id="resource-list"></div></section></dialog>
+  <noscript><p class="notice">Enable JavaScript to load your apps.</p></noscript>
 </body>
 </html>

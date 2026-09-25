@@ -2,15 +2,19 @@
 
 A personal, one-click catalog of RONITERVO’s public GitHub Pages apps.
 
+The home screen uses compact generated artwork and short labels, with **Play**, **Learn**, **Create** and **Lab** categories. All eight current apps fit on common phone and desktop screens. Short screens and larger future collections use page buttons instead of a scrolling list. Search is behind the magnifying glass; catalog details and the supporting audio host are behind the information icon.
+
+[README-based app research and category decisions](docs/app-research.md) · [Exact image prompts](site/art/prompts.json)
+
 **Open:** https://ronitervo.github.io/Launchpad/
 
 ## How it stays current
 
 - Every page visit and **Refresh apps** fetch all public repositories from GitHub, using `has_pages` to find published sites. Newly enabled sites appear automatically; disabled or deleted sites disappear.
-- A GitHub Actions workflow rebuilds the saved catalog daily at 04:23 UTC, on every push, and on manual workflow dispatch. It checks site availability and follows redirects to custom domains.
+- A GitHub Actions workflow rebuilds the saved catalog daily at 04:23 UTC, on every push, and on manual workflow dispatch. It checks site availability, follows redirects to custom domains and retrieves README context for categories.
 - The browser shows the saved collection immediately and caches successful discovery locally. If GitHub is temporarily unavailable or rate limited, existing links remain usable.
 - One card is shown per hosted repository. Mini-apps remain inside their parent site.
-- Pages-enabled repositories with no available launch page are listed under **Also hosted**, with a repository link.
+- Pages-enabled repositories with no available launch page are listed under **Also hosted** in catalog details, with a repository link.
 - The Launchpad repository itself is excluded to avoid a self-link.
 
 The public site never receives a token. The scheduled workflow uses GitHub’s built-in repository-scoped token; no personal access token or separate service is needed. Only public repository metadata and public website metadata are published.
@@ -36,6 +40,8 @@ npm start
 Open the local URL printed by the server. Set `PORT` to use a specific port; the default chooses an available one.
 
 The static website is in `site/`. Edit `site/config.json` to change the account or catalog repository. For another owner, also update the profile, source links and page metadata in `site/index.html`.
+
+App artwork, short labels and reviewed categories are mapped in `site/profiles.js`. These mappings survive live discovery and daily syncs. New apps appear immediately with initials; the next daily sync retrieves their README and applies a keyword-based category. Add dedicated artwork by generating an image, exporting a small WebP to `site/art/`, and adding an entry in `profiles.js`. All current launch images together are under 180 KiB. The full-resolution generated originals are also delivered locally in `launchpad-art/`; they are not downloaded by the site.
 
 ## Deploy
 
